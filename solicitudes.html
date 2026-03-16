@@ -1,24 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
 <meta charset="UTF-8">
-<title>Solicitudes</title>
+<title>Solicitudes de Laboratorio</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-<h1>Solicitar espacio</h1>
+<h1>Solicitud de Laboratorio</h1>
 
+<div class="card">
+
+<label>Fecha</label>
 <input type="date">
-<input placeholder="Horario">
 
+<label>Horario</label>
+<input type="text" placeholder="Ej. 10:00 - 12:00">
+
+<label>Laboratorio</label>
 <select>
-<option>Aula 1</option>
-<option>Laboratorio</option>
+  <option>Aula 1</option>
+  <option>Aula 2</option>
+  <option>Lab Digital</option>
+  <option>Laboratorio Redes</option>
+  <option>Lab Programación</option>
 </select>
+
+<br>
 
 <button>Enviar solicitud</button>
 
+<p>
+<a href="alumno.html">Volver al panel</a>
+</p>
+
+</div>
+
+<script src="js/app.js"></script>
+
 </body>
+
 </html>
-```
