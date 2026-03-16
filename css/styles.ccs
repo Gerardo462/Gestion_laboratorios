@@ -1,0 +1,13 @@
+body{
+font-family: Arial;
+background:#f4f7fb;
+padding:40px;
+}
+
+button{
+background:#0d4fb3;
+color:white;
+padding:10px;
+border:none;
+cursor:pointer;
+}
