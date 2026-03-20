@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel - UAM</title>
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="img/unispace.png" type="image/x-icon">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1">Panel de usuario</span>
+            <button class="btn btn-outline-light" onclick="cerrarSesion()">Cerrar sesión</button>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="card shadow">
+            <div class="card-body">
+                <h2 class="mb-3">Bienvenido</h2>
+                <p><strong>Nombre:</strong> <span id="datoNombre"></span></p>
+                <p><strong>Correo:</strong> <span id="datoCorreo"></span></p>
+                <p><strong>Matrícula:</strong> <span id="datoMatricula"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
