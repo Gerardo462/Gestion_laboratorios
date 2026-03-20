@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar contraseña - UAM</title>
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="img/unispace.png" type="image/x-icon">
+</head>
+<body class="bg-light d-flex align-items-center min-vh-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="card shadow p-4">
+                    <h2 class="text-center mb-4">Recuperar contraseña</h2>
+
+                    <form id="recuperarForm">
+                        <div class="mb-3">
+                            <label for="correoRecuperar" class="form-label">Correo</label>
+                            <input type="email" id="correoRecuperar" class="form-control" placeholder="Ingresa tu correo" required>
+                        </div>
+
+                        <div id="mensajeRecuperar" class="alert d-none" role="alert"></div>
+
+                        <button type="submit" class="btn btn-primary w-100">Buscar cuenta</button>
+
+                        <div class="text-center mt-3">
+                            <a href="index.html">Volver al inicio</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
