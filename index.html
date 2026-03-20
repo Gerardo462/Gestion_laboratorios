@@ -1,69 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/colores.css">
-    <script src="js/js/bootstrap.bundle.min.js"></script>
-    <link rel="shortcut icon" href="img/unispace.png" type="image/x-icon">
-    <title>Inicio | UAM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - UAM</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/colores.css">
+
 </head>
+
 <body>
 
-<div class="container-fluid p-0">
-  <div class="row g-0">
-    
-    <div class="col-12 col-md-6 fondo_animado text-dark p-0 min-vh-100 d-flex justify-content-center align-items-center">
-      <div class="text-center">
-        <img src="img/unispace_logo.png" alt="Logo UniSpace" class="img-fluid" style="max-width: 340px;">
+<div class="container">
+
+  <!-- LADO IZQUIERDO -->
+  <div class="left">
+    <img src="img/unispace_logo.png" class="logo">
+  </div>
+
+  <!-- LADO DERECHO -->
+  <div class="right">
+
+    <h2>Bienvenido</h2>
+
+    <div class="card">
+
+      <h3>Iniciar sesión</h3>
+
+      <input type="email" placeholder="Correo electrónico" id="correo">
+      <input type="password" placeholder="Contraseña" id="password">
+
+      <div class="links">
+        <a href="recuperar.html">¿Olvidó su contraseña?</a>
       </div>
-    </div>
 
-    <div class="col-12 col-md-6 bg-light p-4 min-vh-100 d-flex flex-column justify-content-center">
-      <h2 class="text-center mb-4">Bienvenido</h2>
+      <button onclick="login()">Ingresar</button>
 
-      <div class="card shadow">
-        <div class="card-body">
-          <h5 class="card-title text-center mb-3">Iniciar sesión</h5>
-
-          <form id="loginForm">
-            <div class="mb-3">
-              <label for="correo" class="form-label text-dark">Correo electrónico</label>
-              <input type="email" class="form-control bg_form" id="correo" placeholder="Ingresa tu correo" required>
-            </div>
-
-            <div class="mb-3">
-              <label for="password" class="form-label text-dark">Contraseña</label>
-              <input type="password" class="form-control bg_form" id="password" placeholder="Ingresa tu contraseña" required>
-            </div>
-
-            <div class="row align-items-center mb-3">
-              <div class="col-12 col-md-5 text-start mb-2 mb-md-0">
-                <a href="recuperar.html">Olvidé mi contraseña</a>
-              </div>
-
-              <div class="col-12 col-md-7 text-end">
-                <button type="submit" class="btn btn-success w-100">Ingresar</button>
-              </div>
-            </div>
-
-            <div id="mensajeLogin" class="alert d-none" role="alert"></div>
-
-            <div class="text-center">
-              <span>¿No tienes cuenta?</span>
-              <a href="registro.html">Crear una</a>
-            </div>
-          </form>
-
-        </div>
-      </div>
+      <p class="registro">
+        ¿No tienes cuenta?
+        <a href="registro.html">Crea una</a>
+      </p>
 
     </div>
 
   </div>
+
 </div>
 
 <script src="js/app.js"></script>
+
 </body>
 </html>
